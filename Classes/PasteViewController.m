@@ -9,6 +9,9 @@
 #import "PasteViewController.h"
 #import "Pastie.h"
 
+@interface PasteViewController () <PastieDelegate>
+@end
+
 @implementation PasteViewController
 
 @synthesize textView;

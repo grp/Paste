@@ -8,12 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol PastieDelegate;
+
 @interface Pastie : NSObject {
-	id delegate;
+	id<PastieDelegate> delegate;
 }
 
-@property (nonatomic, assign) id delegate;
+@property (nonatomic, assign) id<PastieDelegate> delegate;
 
 - (void)beginSubmissionWithText:(NSString *)text;
 
+@end
+
+@protocol PastieDelegate <NSObject>
+@optional
+- (void)submissionCompletedWithURL:(NSURL *)url;
+- (void)submissionFailedWithError:(NSError *)error;
 @end
