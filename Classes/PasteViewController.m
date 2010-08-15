@@ -27,7 +27,7 @@
 	[self setTitle:@"Paste"];
 	[self.navigationItem setRightBarButtonItem:submitItem];
 	[self.navigationItem setLeftBarButtonItem:clearItem];
-	
+	 
 	pastie = [[Pastie alloc] init];
 	[pastie setDelegate:self];
 	

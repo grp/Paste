@@ -26,6 +26,7 @@
 		7D8E96E211E4655D00179819 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E96E111E4655D00179819 /* MainWindow-iPad.xib */; };
 		7D8E96F311E4676700179819 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E96F211E4676700179819 /* Default-Landscape.png */; };
 		7DB541E211E286CA00FE35CA /* Pastie.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD580C711E275E000B9B85E /* Pastie.m */; };
+		7DE20C4E1218606C00A8280A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE20C4D1218606C00A8280A /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		7D8E96F211E4676700179819 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		7DD580C611E275E000B9B85E /* Pastie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pastie.h; sourceTree = "<group>"; };
 		7DD580C711E275E000B9B85E /* Pastie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pastie.m; sourceTree = "<group>"; };
+		7DE20C4D1218606C00A8280A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Paste-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paste-Info.plist"; plistStructureDefinitionIdentifier = "<none>"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7D53126D11E3AD2F00647A0D /* Default.png */,
+				7DE20C4D1218606C00A8280A /* Default@2x.png */,
 				7D37A41011E32273000BDF90 /* Icon.png */,
 				7D5312A811E4158000647A0D /* Icon-Small.png */,
 				7D5312AA11E4158000647A0D /* Icon@2x.png */,
@@ -214,6 +217,7 @@
 				7D5312D711E41F4A00647A0D /* PasteView.xib in Resources */,
 				7D8E96E211E4655D00179819 /* MainWindow-iPad.xib in Resources */,
 				7D8E96F311E4676700179819 /* Default-Landscape.png in Resources */,
+				7DE20C4E1218606C00A8280A /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
