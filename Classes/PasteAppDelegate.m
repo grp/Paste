@@ -29,6 +29,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
 }
 
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+	viewController.currentText = [[UIPasteboard generalPasteboard] string];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+	viewController.currentText = nil;
+}
 
 #pragma mark -
 #pragma mark Memory management

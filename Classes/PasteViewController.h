@@ -26,6 +26,8 @@
 @property (nonatomic, assign) BOOL loading;
 @property (nonatomic, retain) Pastie *pastie;
 
+@property (nonatomic, copy) NSString *currentText;
+
 - (void)beginSubmission;
 
 @end

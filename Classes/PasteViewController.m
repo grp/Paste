@@ -47,6 +47,16 @@
 	[textView becomeFirstResponder];
 }
 
+- (NSString *)currentText
+{
+	return textView.text;
+}
+
+- (void)setCurrentText:(NSString *)currentText
+{
+	textView.text = currentText;
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
