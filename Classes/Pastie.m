@@ -14,11 +14,11 @@
 
 @synthesize delegate;
 
-- (void)beginSubmissionWithText:(NSString *)text {
+- (void)beginSubmissionWithText:(NSString *)text makePrivate:(BOOL)makePrivate {
 	NSMutableDictionary *post_dict = [NSMutableDictionary dictionary];
 	[post_dict setObject:text forKey:@"paste[body]"];
 	[post_dict setObject:@"burger" forKey:@"paste[authorization]"];
-	[post_dict setObject:@"1" forKey:@"paste[restricted]"];
+	[post_dict setObject:makePrivate ? @"1" : @"0" forKey:@"paste[restricted]"];
 	[post_dict setObject:@"6" forKey:@"paste[parser_id]"];
 	
 	NSMutableData *post_data = [NSMutableData data];

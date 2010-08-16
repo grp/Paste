@@ -16,7 +16,7 @@
 
 @property (nonatomic, assign) id<PastieDelegate> delegate;
 
-- (void)beginSubmissionWithText:(NSString *)text;
+- (void)beginSubmissionWithText:(NSString *)text makePrivate:(BOOL)makePrivate;
 
 @end
 

@@ -132,7 +132,9 @@
 - (void)beginSubmission {
 	[self setLoadingModeEnabled:YES];
 	
-	[pastie beginSubmissionWithText:[textView text]];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults registerDefaults:[NSDictionary dictionaryWithObject:(id)kCFBooleanTrue forKey:@"private"]];
+	[pastie beginSubmissionWithText:[textView text] makePrivate:[defaults boolForKey:@"private"]];
 }
 
 - (void)submissionCompletedWithURL:(NSURL *)url {
