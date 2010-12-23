@@ -3,7 +3,7 @@
 //  Paste
 //
 //  Created by Grant Paul on 7/5/10.
-//  Copyright Xuzz Productions 2010. All rights reserved.
+//  Copyright 2010 Xuzz Productions, LLC. All rights reserved.
 //
 
 #import "PasteAppDelegate.h"

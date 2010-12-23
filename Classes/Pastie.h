@@ -3,7 +3,7 @@
 //  Paste
 //
 //  Created by Grant Paul on 7/5/10.
-//  Copyright 2010 Xuzz Productions. All rights reserved.
+//  Copyright 2010 Xuzz Productions, LLC. All rights reserved.
 // 
 
 #import <Foundation/Foundation.h>
@@ -16,7 +16,11 @@
 
 @property (nonatomic, assign) id<PastieDelegate> delegate;
 
++ (NSDictionary *)languages;
+
+- (void)beginSubmissionWithText:(NSString *)text makePrivate:(BOOL)private language:(NSInteger)language;
 - (void)beginSubmissionWithText:(NSString *)text makePrivate:(BOOL)makePrivate;
+- (void)beginSubmissionWithText:(NSString *)text;
 
 @end
 

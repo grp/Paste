@@ -13,6 +13,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		7D31182312BDFDD20090594C /* LanguageSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D31182112BDFDD20090594C /* LanguageSelectViewController.m */; };
+		7D31182412BDFDD20090594C /* LanguageSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D31182212BDFDD20090594C /* LanguageSelectView.xib */; };
 		7D37A41111E32273000BDF90 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D37A41011E32273000BDF90 /* Icon.png */; };
 		7D53126E11E3AD2F00647A0D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D53126D11E3AD2F00647A0D /* Default.png */; };
 		7D5312AB11E4158000647A0D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5312A611E4158000647A0D /* Icon-72.png */; };
@@ -27,6 +29,7 @@
 		7D8E96F311E4676700179819 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D8E96F211E4676700179819 /* Default-Landscape.png */; };
 		7DB541E211E286CA00FE35CA /* Pastie.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD580C711E275E000B9B85E /* Pastie.m */; };
 		7DE20C4E1218606C00A8280A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE20C4D1218606C00A8280A /* Default@2x.png */; };
+		7DE7EAFB12BDE030001632F8 /* DoubleNavigationTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7EAFA12BDE030001632F8 /* DoubleNavigationTitleView.m */; };
 		948E6A4A1218B39D0064B7C2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 948E6A491218B39D0064B7C2 /* Settings.bundle */; };
 		94CBEA591218E0C200E3CCB3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 94CBEA581218E0C200E3CCB3 /* Icon-72.png */; };
 		94CBEA5B1218E0CC00E3CCB3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 94CBEA5A1218E0CC00E3CCB3 /* Icon-Small-50.png */; };
@@ -44,6 +47,9 @@
 		28A0AAE50D9B0CCF005BE974 /* Paste_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paste_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D31182012BDFDD20090594C /* LanguageSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageSelectViewController.h; sourceTree = "<group>"; };
+		7D31182112BDFDD20090594C /* LanguageSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageSelectViewController.m; sourceTree = "<group>"; };
+		7D31182212BDFDD20090594C /* LanguageSelectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSelectView.xib; path = Classes/LanguageSelectView.xib; sourceTree = "<group>"; };
 		7D37A41011E32273000BDF90 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7D53126D11E3AD2F00647A0D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7D5312A611E4158000647A0D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -60,7 +66,9 @@
 		7DD580C611E275E000B9B85E /* Pastie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pastie.h; sourceTree = "<group>"; };
 		7DD580C711E275E000B9B85E /* Pastie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pastie.m; sourceTree = "<group>"; };
 		7DE20C4D1218606C00A8280A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Paste-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paste-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		7DE7EAF912BDE030001632F8 /* DoubleNavigationTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNavigationTitleView.h; sourceTree = "<group>"; };
+		7DE7EAFA12BDE030001632F8 /* DoubleNavigationTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleNavigationTitleView.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Paste-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paste-Info.plist"; plistStructureDefinitionIdentifier = "<none>"; sourceTree = "<group>"; };
 		948E6A491218B39D0064B7C2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		94CBEA581218E0C200E3CCB3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
 		94CBEA5A1218E0CC00E3CCB3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
@@ -91,6 +99,10 @@
 				7D5312BB11E41DB300647A0D /* PasteViewController.m */,
 				7DD580C611E275E000B9B85E /* Pastie.h */,
 				7DD580C711E275E000B9B85E /* Pastie.m */,
+				7DE7EAF912BDE030001632F8 /* DoubleNavigationTitleView.h */,
+				7DE7EAFA12BDE030001632F8 /* DoubleNavigationTitleView.m */,
+				7D31182012BDFDD20090594C /* LanguageSelectViewController.h */,
+				7D31182112BDFDD20090594C /* LanguageSelectViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -140,6 +152,7 @@
 				94CBEA5A1218E0CC00E3CCB3 /* Icon-Small-50.png */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				7D5312D611E41F4A00647A0D /* PasteView.xib */,
+				7D31182212BDFDD20090594C /* LanguageSelectView.xib */,
 				8D1107310486CEB800E47090 /* Paste-Info.plist */,
 				948E6A491218B39D0064B7C2 /* Settings.bundle */,
 			);
@@ -198,6 +211,7 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Paste" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -238,6 +252,7 @@
 				94CBEA5B1218E0CC00E3CCB3 /* Icon-Small-50.png in Resources */,
 				94CBEA5E1218E0E900E3CCB3 /* Default-Landscape.png in Resources */,
 				94CBEA5F1218E0E900E3CCB3 /* Default-Portrait.png in Resources */,
+				7D31182412BDFDD20090594C /* LanguageSelectView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +267,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PasteAppDelegate.m in Sources */,
 				7D5312BC11E41DB300647A0D /* PasteViewController.m in Sources */,
+				7DE7EAFB12BDE030001632F8 /* DoubleNavigationTitleView.m in Sources */,
+				7D31182312BDFDD20090594C /* LanguageSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +279,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -269,6 +288,9 @@
 				GCC_PREFIX_HEADER = Paste_Prefix.pch;
 				INFOPLIST_FILE = "Paste-Info.plist";
 				PRODUCT_NAME = Paste;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
 			};
 			name = Debug;
 		};
@@ -276,44 +298,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Paste_Prefix.pch;
 				INFOPLIST_FILE = "Paste-Info.plist";
 				PRODUCT_NAME = Paste;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		94CBEA621218E18A00E3CCB3 /* App Store */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = "App Store";
-		};
-		94CBEA631218E18A00E3CCB3 /* App Store */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Paste_Prefix.pch;
-				INFOPLIST_FILE = "Paste-Info.plist";
-				PRODUCT_NAME = Paste;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "App Store";
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -356,7 +353,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-				94CBEA631218E18A00E3CCB3 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -366,7 +362,6 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-				94CBEA621218E18A00E3CCB3 /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

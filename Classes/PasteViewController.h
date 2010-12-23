@@ -3,30 +3,41 @@
 //  Paste
 //
 //  Created by Grant Paul on 7/6/10.
-//  Copyright 2010 Xuzz Productions. All rights reserved.
+//  Copyright 2010 Xuzz Productions, LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class Pastie;
 
-@interface PasteViewController : UIViewController {
+@class Pastie;
+@class DoubleNavigationTitleView;
+
+@protocol PastieDelegate;
+@protocol DoubleNavigationDelegate;
+@protocol LanguageSelectDelegate;
+
+@interface PasteViewController : UIViewController <DoubleNavigationDelegate, PastieDelegate, LanguageSelectDelegate> {
 	UITextView *textView;
-	UINavigationBar *navigationBar;
+    DoubleNavigationTitleView *titleItem;
+    UIPopoverController *popover; // ugh, bad API design
 	UIBarButtonItem *clearItem;
 	UIBarButtonItem *submitItem;
+    NSString *targetLanguage;
+    BOOL makePrivate;
 	BOOL loading;
 	Pastie *pastie;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView *textView;
-@property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar;
+@property (nonatomic, retain) DoubleNavigationTitleView *titleItem;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *clearItem;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *submitItem;
 @property (nonatomic, assign) BOOL loading;
 @property (nonatomic, retain) Pastie *pastie;
 
 @property (nonatomic, copy) NSString *currentText;
+@property (nonatomic, copy) NSString *targetLanguage;
+@property (nonatomic, assign) BOOL makePrivate;
 
 - (void)beginSubmission;
 
