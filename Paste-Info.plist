@@ -37,16 +37,16 @@
 	<string>MainWindow</string>
 	<key>NSMainNibFile~ipad</key>
 	<string>MainWindow-iPad</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
+	<key>UIPrerenderedIcon</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 </dict>
 </plist>
