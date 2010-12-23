@@ -12,11 +12,7 @@
 @class Pastie;
 @class DoubleNavigationTitleView;
 
-@protocol PastieDelegate;
-@protocol DoubleNavigationDelegate;
-@protocol LanguageSelectDelegate;
-
-@interface PasteViewController : UIViewController <DoubleNavigationDelegate, PastieDelegate, LanguageSelectDelegate> {
+@interface PasteViewController : UIViewController {
 	UITextView *textView;
     DoubleNavigationTitleView *titleItem;
     UIPopoverController *popover; // ugh, bad API design

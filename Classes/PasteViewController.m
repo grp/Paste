@@ -11,7 +11,7 @@
 #import "LanguageSelectViewController.h"
 #import "Pastie.h"
 
-@interface PasteViewController () <PastieDelegate>
+@interface PasteViewController () <DoubleNavigationDelegate, PastieDelegate, LanguageSelectDelegate>
 @end
 
 @implementation PasteViewController
@@ -69,24 +69,6 @@
 	[textView becomeFirstResponder];
 }
 
-- (void)setTargetLanguage:(NSString *)lang {
-    [targetLanguage autorelease];
-    targetLanguage = [lang copy];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:lang forKey:@"language"];
-    [titleItem setSubtitle:[self targetLanguage]];
-}
-
-- (NSString *)currentText
-{
-	return textView.text;
-}
-
-- (void)setCurrentText:(NSString *)currentText
-{
-	textView.text = currentText;
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
 }
@@ -117,6 +99,25 @@
     [targetLanguage release];
     
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark Data
+
+- (void)setTargetLanguage:(NSString *)lang {
+    [targetLanguage autorelease];
+    targetLanguage = [lang copy];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:lang forKey:@"language"];
+    [titleItem setSubtitle:[self targetLanguage]];
+}
+
+- (NSString *)currentText {
+	return textView.text;
+}
+
+- (void)setCurrentText:(NSString *)currentText {
+	textView.text = currentText;
 }
 
 #pragma mark -
