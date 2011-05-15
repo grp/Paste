@@ -1,0 +1,9 @@
+{
+	"id": "com.xuzzproductions.paste-webos",
+	"version": "1.0.0",
+	"vendor": "Xuzz Productions",
+	"type": "web",
+	"main": "index.html",
+	"title": "Paste",
+	"icon": "icon.png"
+}
