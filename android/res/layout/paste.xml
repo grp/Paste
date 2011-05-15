@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/container"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+    <EditText
+    	android:id="@+id/main_text"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:gravity="top"
+        android:typeface="monospace"
+        android:textSize="14px"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:autoText="false"
+        android:capitalize="none"
+    />
+</LinearLayout>

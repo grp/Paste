@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_clear" android:title="Clear" android:icon="@drawable/menu_clear" android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/menu_submit" android:title="Submit" android:icon="@drawable/menu_submit" android:showAsAction="ifRoom|withText" />
+</menu>
