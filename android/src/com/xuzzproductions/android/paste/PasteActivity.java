@@ -38,10 +38,8 @@ public class PasteActivity extends ActionBarSherlock.Activity
     protected boolean hasModernClipboardManager() {
         try {
             Class.forName("android.content.ClipboardManager", false, null);
-            Log.i(TAG, "Using modern clipboard.");
             return true;
         } catch (ClassNotFoundException e) {
-            Log.i(TAG, "Using ancient clipboard.");
             return false;
         }
     }
